@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fupan.sxdial.MainActivity">
+    <LinearLayout
+        android:padding="@dimen/activity_horizontal_margin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/account"
+            android:background="@drawable/edit_bg"
+            android:hint="@string/account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textCursorDrawable="@drawable/color_cursor"/>
+
+        <EditText
+            android:id="@+id/pwd"
+            android:background="@drawable/edit_bg"
+            android:hint="@string/pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:inputType="numberPassword"
+            android:textCursorDrawable="@drawable/color_cursor"/>
+
+        <Button
+            android:id="@+id/dial"
+            android:background="@drawable/btn_bg"
+            android:text="@string/dial"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            />
+
+
+
+        <Button
+            android:id="@+id/status"
+            android:background="@drawable/btn_bg"
+            android:text="@string/status"
+
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_x="-21dp"
+            android:layout_y="268dp" />
+
+        <WebView
+            android:id="@+id/webv_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </WebView>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

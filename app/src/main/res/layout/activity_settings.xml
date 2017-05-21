@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <LinearLayout
+        android:clickable="true"
+        android:id="@+id/settings_view"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin"
+        android:background="@drawable/setting_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+<ImageButton
+    android:layout_gravity="center_horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_keyboard_arrow_up_black_24dp"/>
+
+        <EditText
+            android:textColorHint="#5895fe"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textColor="#000000"
+            android:id="@+id/host"
+            android:background="@drawable/edit_bg"
+            android:hint="@string/host"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textCursorDrawable="@drawable/color_cursor"/>
+
+        <EditText
+            android:textColorHint="#5895fe"
+            android:textColor="#000000"
+            android:id="@+id/router_psw"
+            android:background="@drawable/edit_bg"
+            android:hint="@string/router_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:textCursorDrawable="@drawable/color_cursor"/>
+
+        <Button
+            android:id="@+id/save"
+            android:background="@drawable/btn_bg"
+            android:text="@string/save"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/extra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/extra_text" />
+
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/down"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_keyboard_arrow_down_black_24dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+     />
+
+</RelativeLayout>
